@@ -1,0 +1,49 @@
+StringResponse searchResponse = await client.Client.SearchAsync<StringResponse>("product_search", PostData.Serializable(new
+            {
+                query = new
+                {
+                    @bool = new
+                    {
+                        should = new
+                        {
+                            @bool = new
+                            {
+                                must = new
+                                {
+                                    match_phrase_prefix = new
+                                    {
+                                        name = new
+                                        {
+                                            query = $"{query}",
+                                            slop = 3,
+                                            max_expansions = 10
+                                        }
+                                    }
+                                },
+                                should = new
+                                {
+                                    multi_match = new
+                                    {
+                                        query = $"{query}",
+                                        fields = @"[""name"",""url"", ""image""]",
+                                        fuzziness = "auto",
+                                        @operator = "or"
+                                    }
+                                }
+                            }
+                        },
+                        filter = new
+                        {
+                            term = new
+                            {
+                                type = "product"
+                            }
+                        }
+                    }
+                },
+                size = 50,
+                _source = new object[]
+                {
+                   "name", "image", "sku", "price"
+                }
+            }));

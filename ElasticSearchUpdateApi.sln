@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TedderEsUpdate", "TedderEsUpdate\TedderEsUpdate.csproj", "{4A6E1DE9-8DA6-4C62-B0C8-CB09FDF5B5D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TedderEsUpdate.Tests", "TedderEsUpdate.Tests\TedderEsUpdate.Tests.csproj", "{53F42E15-BDE8-4CDA-959A-CA5D2D805731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A6E1DE9-8DA6-4C62-B0C8-CB09FDF5B5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A6E1DE9-8DA6-4C62-B0C8-CB09FDF5B5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A6E1DE9-8DA6-4C62-B0C8-CB09FDF5B5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A6E1DE9-8DA6-4C62-B0C8-CB09FDF5B5D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F42E15-BDE8-4CDA-959A-CA5D2D805731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F42E15-BDE8-4CDA-959A-CA5D2D805731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F42E15-BDE8-4CDA-959A-CA5D2D805731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F42E15-BDE8-4CDA-959A-CA5D2D805731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCA6BE11-A21C-4259-B082-6AF404DB4D79}
+	EndGlobalSection
+EndGlobal
